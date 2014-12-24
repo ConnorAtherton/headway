@@ -1,0 +1,22 @@
+{
+  "name": "headway",
+  "version": "0.0.1",
+  "description": "Print progress bars on the command line.",
+  "main": "src/headway.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ConnorAtherton/headway.git"
+  },
+  "author": "Connor Atherton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ConnorAtherton/headway/issues"
+  },
+  "homepage": "https://github.com/ConnorAtherton/headway"
+}
