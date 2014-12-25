@@ -1,4 +1,7 @@
 module.exports = {
+  /*
+   * Text modifiers
+   */
   "/"                : "0",
   "reset"            : "0",
   "bold"             : "1",
@@ -10,6 +13,10 @@ module.exports = {
   "underline_none"   : "24",
   "blink_off"        : "25",
   "positive"         : "27",
+
+  /*
+   * Background colors
+   */
   "_black_"          : "40",
   "_red_"            : "41",
   "_green_"          : "42",
@@ -27,6 +34,10 @@ module.exports = {
   "_light_magenta_"  : "105",
   "_light_purple_"   : "105",
   "_light_cyan_"     : "106",
+
+  /*
+   * Text colors
+   */
   "black"            : "30",
   "red"              : "31",
   "green"            : "32",

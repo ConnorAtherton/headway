@@ -25,7 +25,7 @@ var Headway = {
  */
 
 function log(content) {
-  process.stdout.write(content.toString())
+  process.stdout.write(content.toString());
 }
 
 function newLine() {
@@ -36,7 +36,8 @@ function matchFunction(match) {
   return "\u001b[" + STYLES[match.slice(1, -1)] + "m"
 }
 
-var res = Headway.parse("{_light_cyan_}{red}Green works{/}\n{red}And it's now it's red")
+var res = Headway.parse("{_cyan_}{white}Green works{/}\n{red}And it's now it's red{/}")
+
 console.log(res);
 
 
