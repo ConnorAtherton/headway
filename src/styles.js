@@ -4,15 +4,16 @@ module.exports = {
    */
   "/"                : "0",
   "reset"            : "0",
-  "bold"             : "1",
-  "underline"        : "4",
-  "blink_slow"       : "5",
-  "blink_fast"       : "6",
-  "negative"         : "7",
-  "normal"           : "22",
-  "underline_none"   : "24",
-  "blink_off"        : "25",
-  "positive"         : "27",
+
+  "_bold"            : "1",
+  "_underline"       : "4",
+  "_blink_slow"      : "5",
+  "_blink_fast"      : "6",
+  "_negative"        : "7",
+  "_normal"          : "22",
+  "_underline_none"  : "24",
+  "_blink_off"       : "25",
+  "_positive"        : "27",
 
   /*
    * Background colors
