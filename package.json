@@ -1,7 +1,7 @@
 {
   "name": "headway",
-  "version": "0.0.1",
-  "description": "Print progress bars on the command line.",
+  "version": "0.0.2",
+  "description": "Easy ansi style string parsing for the terminal.",
   "main": "src/headway.js",
   "directories": {
     "test": "test"
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ConnorAtherton/headway/issues"
   },
-  "homepage": "https://github.com/ConnorAtherton/headway"
+  "homepage": "https://github.com/ConnorAtherton/headway",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
 }
