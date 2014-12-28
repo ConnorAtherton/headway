@@ -9,7 +9,7 @@ var Headway = {
     addReset = addReset || true;
 
     if (Array.isArray(string)) {
-      return this.logArray(string);
+      return this.logArray(string, newLine);
     }
 
     // add reset character to each string by default
@@ -24,11 +24,11 @@ var Headway = {
     return string.replace(PARSE_REGEX, matchFunction)
   },
 
-  logArray: function(arr) {
+  logArray: function(arr, newLine) {
     var length = arr.length;
 
     for (var i = 0; i < length; i++) {
-      this.log(arr[i]);
+      this.log(arr[i], newLine);
     }
   },
 

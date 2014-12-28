@@ -34,7 +34,7 @@ var hw = require('headway');
 hw.log("{_cyan_}{white}Green works{/}\n{red}And it's now it's red")
 
 var arr = ['{black}{_yellow_}String 1', '{green}{_underline}String 2']
-hw.log(arr);
+hw.log(arr, false);
 ```
 ![Headway example](/img/example1.png)
 
@@ -48,6 +48,13 @@ All must be included in `{}` within the string.
 
 ### Resetting
 Use one of the special reset characters `{/}` or `{reset}` to change the
-styles back to default.
+all styles back to default.
+
+You can omit this if you are just changing one style. For example, if you
+are changing the text color from green to blue you can just do
+
+```js
+hw.log("{green}Green text{blue}Blue text")
+```
 
 
