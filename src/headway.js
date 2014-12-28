@@ -4,8 +4,9 @@ var PARSE_REGEX  = new RegExp("{(" + Object.keys(STYLES).join('|') + ")}", "ig")
 var INDENT_REGEX = new RegExp("{indent}/", "ig");
 
 var Headway = {
-  log: function(string, addReset) {
-    var addReset = addReset || true;
+  log: function(string, newLine, addReset) {
+    newLine = (typeof newLine !== 'undefined') ? newLine : true;
+    addReset = addReset || true;
 
     if (Array.isArray(string)) {
       return this.logArray(string);
@@ -16,7 +17,7 @@ var Headway = {
 
     var parsed = this.parse(string);
     // process.stdout.write flushes the stream
-    write(parsed);
+    newLine ? console.log(parsed) : write(parsed);
   },
 
   parse: function(string) {
@@ -31,12 +32,12 @@ var Headway = {
     }
   },
 
-  redisplay: function(numSpace) {
+  redisplay: function(str, numSpace) {
     numSpace = numSpace || 0;
 
     var space = " " * numSpace;
     write("\r" + numSpace + "\r");
-    this.log()
+    this.log(str, false);
   }
 }
 

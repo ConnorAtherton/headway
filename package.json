@@ -1,6 +1,6 @@
 {
   "name": "headway",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Easy ansi style string parsing for the terminal.",
   "main": "src/headway.js",
   "directories": {
