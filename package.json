@@ -1,6 +1,6 @@
 {
   "name": "headway",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Easy ansi style string parsing for the terminal.",
   "main": "src/headway.js",
   "directories": {
@@ -21,5 +21,8 @@
   "homepage": "https://github.com/ConnorAtherton/headway",
   "devDependencies": {
     "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "ancee": "^1.0.1"
   }
 }

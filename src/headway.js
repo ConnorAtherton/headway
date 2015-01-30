@@ -1,4 +1,4 @@
-var STYLES = require("./styles");
+var STYLES = require("ancee");
 
 var PARSE_REGEX  = new RegExp("{(" + Object.keys(STYLES).join('|') + ")}", "ig");
 var INDENT_REGEX = new RegExp("{indent}/", "ig");
