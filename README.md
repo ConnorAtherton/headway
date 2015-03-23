@@ -12,7 +12,6 @@ of all three printing the same thing.
 // chalk
 console.log(chalk.red(err) + chalk.yellow(": Some description string"));
 // colors.js
-console.log(chalk.red(err) + chalk.yellow(": Some description string"));
 console.log(err.red + ": Some description string".yellow);
 // headway
 headway.log('{red}' + err + '{yellow}: Some description string');
